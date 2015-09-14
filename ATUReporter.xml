@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite0" parallel="false">
+  <test name="ATUReportertest1">
+    <classes>
+      <class name="Extras.AtuReporter"/>
+    </classes>
+  </test> <!-- ATUReportertest1 -->
+  
+  <listeners>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+	</listeners>
+	
+</suite> <!-- Suite0 -->

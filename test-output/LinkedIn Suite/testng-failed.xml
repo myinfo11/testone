@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [LinkedIn Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="LinkedInChrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="project.TestCaseTwo">
+        <methods>
+          <include name="searchKeyword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- project.TestCaseTwo -->
+      <class name="project.TestCaseOne">
+        <methods>
+          <include name="verifyTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- project.TestCaseOne -->
+    </classes>
+  </test> <!-- LinkedInChrome(failed) -->
+  <test name="LinkedInFirefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="project.TestCaseTwo">
+        <methods>
+          <include name="searchKeyword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- project.TestCaseTwo -->
+    </classes>
+  </test> <!-- LinkedInFirefox(failed) -->
+</suite> <!-- Failed suite [LinkedIn Suite] -->

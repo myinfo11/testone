@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LinkedIn Suite" parallel="tests" thread-count="3">
+
+<test name="LinkedInFirefox">
+<parameter name="browser" value="firefox"/>
+<classes>
+<class name="project.TestCaseOne"/>
+<class name="project.TestCaseTwo"/>
+<class name="project.TestCaseThree"/>
+</classes>
+</test>
+
+<test name="LinkedInChrome">
+<parameter name="browser" value="chrome"/>
+<classes> 
+<class name="project.TestCaseOne"/>
+<class name="project.TestCaseTwo"/>
+<class name="project.TestCaseThree"/>
+</classes>
+</test>
+</suite>
